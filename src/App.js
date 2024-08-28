@@ -1,23 +1,37 @@
 import './App.css';
 
 function App() {
-  const userName = "Gamage";
-  const description = (
-    <div>
-      <h2>School</h2>
-      <p>My school is Morawaka Kanishta Vidyalaya</p>
-    </div>
-  );
   return (
     <div>
-      <h2>This is Asiri</h2>
-      <p>Hi World. Asiri Started to learn React</p>
-      {/* /<h3>userName</h3> we cant use variables in the code like this*/}
-      {/* we can use following methodology */}
-      <h3>{userName}</h3>
-      {description}
+      <UserData userName="Pawani Jayalath" userEmail="pawani@gmail.com"/>
+      <UserData userName="Hasun Sithmika" userEmail="sithmika@gmail.com"/>
+      <UserData userName="Sahan Randunu" userEmail="randunu@gmail.com"/>
+      <UserData userName="Kavmini Thathsarani" userEmail="kthathsarani@gmail.com"/>
+      <UserData userName="Hasira Manoj" userEmail="mhasira@gmail.com"/>
+
+      
+      <UserLink link="https://github.com/asiripr" label="Asiri's GitHub"/>
+      <UserLink link="https://x.com/asiripramodaya" label="Asiri's X"/>
+      
     </div>
   );
 }
+// UserData component
+const UserData = (props) =>{
+  return(
+    <div>
+      <h2>{props.userName}</h2>
+      <p>{props.userEmail}</p>
+    </div>
+  );
+}; 
 
+// another user componet
+const UserLink = (props) => {
+  return(
+    <div>
+      <a href={props.link} target='_blank'>{props.label}</a>
+    </div>
+  );
+}
 export default App;
