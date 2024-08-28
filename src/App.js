@@ -20,6 +20,7 @@ function App() {
     <div>
       <UserData />
       <UserData />
+      <UserLink />
       <UserData />
       <UserData />
     </div>
@@ -34,4 +35,13 @@ const UserData = () =>{
     </div>
   );
 }; 
+
+// another user componet
+const UserLink = () => {
+  return(
+    <div>
+      <a href='https://github.com/asiripr'>Asiri's GitHub</a>
+    </div>
+  );
+}
 export default App;
