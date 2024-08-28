@@ -1,4 +1,6 @@
 import './App.css';
+import UserData from "./components/UserData";
+import UserLink from "./components/UserLink";
 
 function App() {
   return (
