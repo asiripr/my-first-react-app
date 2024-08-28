@@ -16,22 +16,6 @@ function App() {
     </div>
   );
 }
-// UserData component
-const UserData = (props) =>{
-  return(
-    <div>
-      <h2>{props.userName}</h2>
-      <p>{props.userEmail}</p>
-    </div>
-  );
-}; 
 
-// another user componet
-const UserLink = (props) => {
-  return(
-    <div>
-      <a href={props.link} target='_blank'>{props.label}</a>
-    </div>
-  );
-}
+
 export default App;
